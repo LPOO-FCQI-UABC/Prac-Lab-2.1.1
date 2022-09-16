@@ -53,6 +53,7 @@ class Cell(object):
 		c1 = self.___cytoplasm
 		cm1 = self.get_cell_membrane()
 		h1 = self.get_hereditary()
+		print(n)
 		Cytoplasm.to_string(c1)
 		CellMembrane.to_string(cm1)
 		HereditaryMaterial.to_string(h1)

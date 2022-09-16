@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class HumanBody {
+public class LivingBeing {
 
 	Collection<Cell> theCell;
 	private Cell cell;
@@ -10,7 +10,7 @@ public class HumanBody {
 	}
 
 	/**
-	 *
+	 * 
 	 * @param cell
 	 */
 	public void setCell(Cell cell) {

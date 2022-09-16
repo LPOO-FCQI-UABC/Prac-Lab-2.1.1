@@ -1,4 +1,4 @@
-public class HereditaryMaterial {
+public class CellMembrane {
 
 	Cell theCell;
 	private String name;
@@ -8,7 +8,7 @@ public class HereditaryMaterial {
 	}
 
 	/**
-	 *
+	 * 
 	 * @param name
 	 */
 	public void setName(String name) {

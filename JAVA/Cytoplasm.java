@@ -8,7 +8,7 @@ public class Cytoplasm {
 	}
 
 	/**
-	 *
+	 * 
 	 * @param name
 	 */
 	public void setName(String name) {

@@ -13,7 +13,7 @@ public class Cell {
 	}
 
 	/**
-	 *
+	 * 
 	 * @param name
 	 */
 	public void setName(String name) {
@@ -25,7 +25,7 @@ public class Cell {
 	}
 
 	/**
-	 *
+	 * 
 	 * @param livingBeing
 	 */
 	public void setLivingBeing(Vector livingBeing) {

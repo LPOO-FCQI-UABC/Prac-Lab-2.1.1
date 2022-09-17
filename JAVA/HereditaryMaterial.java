@@ -1,18 +1,21 @@
 public class HereditaryMaterial {
 
-	Cell theCell;
 	private String name;
 
-	public String getName() {
+	public HereditaryMaterial(String string) {
+        name = string;
+    }
+
+    public String getName() {
 		return this.name;
 	}
 
-	/**
-	 * 
-	 * @param name
-	 */
 	public void setName(String name) {
 		this.name = name;
 	}
+
+    public void to_String(){
+        System.out.println("\nCaracteristic:" + name);
+    }
 
 }

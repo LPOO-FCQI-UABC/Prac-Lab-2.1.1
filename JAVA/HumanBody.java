@@ -1,20 +1,20 @@
-import java.util.*;
-
 public class HumanBody {
 
-	Collection<Cell> theCell;
 	private Cell cell;
 
-	public Cell getCell() {
+	public HumanBody(Cell cell1) {
+        cell = cell1;
+    }
+
+    public Cell getCell() {
 		return this.cell;
 	}
 
-	/**
-	 * 
-	 * @param cell
-	 */
 	public void setCell(Cell cell) {
 		this.cell = cell;
 	}
 
+    public void to_String(){
+        cell.to_String();
+    }
 }

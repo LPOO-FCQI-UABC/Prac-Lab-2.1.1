@@ -2,34 +2,51 @@ public class Cell {
 
 	LivingBeing theLivingBeing;
 	HumanBody theHumanBody;
-	CellMembrane theCellMembrane;
-	Cytoplasm theCytoplasm;
-	HereditaryMaterial theHereditaryMaterial;
+	private  CellMembranes theCellMembrane;
+	private  Cytoplasms theCytoplasm;
+	private  HereditaryMaterial theHereditaryMaterial;
 	private String name;
-	private Vector livingBeing;
+	
 
-	public String getName() {
+	public Cell(String name, Cytoplasms cytoplasm, CellMembranes cellMembranes, HereditaryMaterial hereditaryMaterial) {
+		this.name = name;
+		theCellMembrane = cellMembranes;
+		theCytoplasm = cytoplasm;
+		theHereditaryMaterial = hereditaryMaterial;
+	}
+
+    public String getName() {
 		return this.name;
 	}
 
-	/**
-	 * 
-	 * @param name
-	 */
 	public void setName(String name) {
 		this.name = name;
 	}
 
-	public Vector getLivingBeing() {
-		return this.livingBeing;
+	public Cytoplasms getCytoplasms(){
+		return theCytoplasm;
+	}
+	public void setCytoplasms(Cytoplasms c){
+		theCytoplasm = c;
 	}
 
-	/**
-	 * 
-	 * @param livingBeing
-	 */
-	public void setLivingBeing(Vector livingBeing) {
-		this.livingBeing = livingBeing;
+	public CellMembranes getCellMembranes(){
+		return theCellMembrane;
+	}
+	public void setCellMembranes(CellMembranes c){
+		theCellMembrane = c;
 	}
 
+	public HereditaryMaterial getHereditaryMaterial(){
+		return theHereditaryMaterial;
+	}
+	public void setHereditaryMaterial(HereditaryMaterial h){
+		theHereditaryMaterial = h;
+	}
+	public void to_String(){
+		System.out.println("Name: " + name);
+		theCytoplasm.to_String();
+		theCellMembrane.to_String();
+		theHereditaryMaterial.to_String();  
+    }
 }
